@@ -5,3 +5,19 @@ function map(array, callback) {
     }
     return result
 }
+
+function forEach(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i], i, array)
+    }
+}
+
+function filter(array, callback) {
+    const result = []
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, array)) {
+            result.push(array[i])
+        }
+    }
+    return result
+}
