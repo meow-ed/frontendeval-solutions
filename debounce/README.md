@@ -8,9 +8,9 @@
 
 - [x] function should accept a `callback` and debounce `interval`
 - [x] function should return a function that only invokes the `callback` once within the `interval`
-- [] function should throw an error if not passed a function in the `callback` param
-- [] function should throw an error if passed an invalid interval
+- [ ] function should throw an error if not passed a function in the `callback` param
+- [ ] function should throw an error if passed an invalid interval
 
 ## Additional Challenge
 
-- [] implement a throttle function
+- [ ] implement a throttle function
