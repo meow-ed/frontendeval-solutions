@@ -14,3 +14,7 @@
 ## Additional Challenge
 
 - [ ] implement a throttle function
+
+## Technologies Used
+
+- Vanilla JS
