@@ -1,45 +1,51 @@
 function map(array, callback) {
-    const result = []
-    for (let i = 0; i < array.length; i++) {
-        result.push(callback(array[i], i, array))
-    }
-    return result
+  const result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(callback(array[i], i, array));
+  }
+  return result;
 }
 
 function forEach(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-        callback(array[i], i, array)
-    }
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i], i, array);
+  }
 }
 
 function filter(array, callback) {
-    const result = []
-    for (let i = 0; i < array.length; i++) {
-        if (callback(array[i], i, array)) {
-            result.push(array[i])
-        }
+  const result = [];
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i], i, array)) {
+      result.push(array[i]);
     }
-    return result
+  }
+  return result;
 }
 
 function every(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-        if (callback(array[i])) { continue }
-        return false
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      continue;
     }
-    return true
+    return false;
+  }
+  return true;
 }
 
 function find(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-        if (callback(array[i])) { return array[i] }
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      return array[i];
     }
-    return undefined
+  }
+  return undefined;
 }
 
 function some(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-        if (callback(array[i])) { return true }
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      return true;
     }
-    return false
+  }
+  return false;
 }
