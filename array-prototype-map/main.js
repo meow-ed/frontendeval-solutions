@@ -21,3 +21,25 @@ function filter(array, callback) {
     }
     return result
 }
+
+function every(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i])) { continue }
+        return false
+    }
+    return true
+}
+
+function find(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i])) { return array[i] }
+    }
+    return undefined
+}
+
+function some(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i])) { return true }
+    }
+    return false
+}
