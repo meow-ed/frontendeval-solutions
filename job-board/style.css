@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-inline: auto;
+  margin-block: 2rem;
+  width: min(80%, 80rem);
+}
+
+.grid > * {
+  display: grid;
+  gap: 3rem;
+  outline: 1px solid black;
+}
