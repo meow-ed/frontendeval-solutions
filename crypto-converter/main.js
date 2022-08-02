@@ -65,11 +65,11 @@ async function getConversionRate(currency) {
 // console.assert(getResultString(-32) == `-32`);
 
 function getResultString(result) {
-  if (!previousResult) return `${result}`;
+  if (!previousResult) return `${result} WUC`;
 
   const difference = (result - previousResult).toFixed(2);
   const span = getChangeString(difference);
-  return `${result} ${span}`;
+  return `${result} WUC ${span}`;
 }
 
 // Number -> String
@@ -81,7 +81,7 @@ function getResultString(result) {
 
 function getChangeString(change) {
   const color = change > 0 ? "green" : "red";
-  const arrow = change > 0 ? "up" : "down";
+  const arrow = change > 0 ? "↑" : "↓";
   return `<span class="${color}">${arrow} ${Math.abs(+change)}</span>`;
 }
 
