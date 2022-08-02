@@ -9,9 +9,9 @@
 - [x] Converted amount should refresh:
 	- [x] every ten seconds
 	- [x] whenever the user changes amount or currency
-- [ ] Show price change since the last shown
-	- [ ] Highlighted green with up arrow if increased
-	- [ ] Highlighted red with a down arrow if price decreaed
+- [x] Show price change since the last shown
+	- [x] Highlighted green with up arrow if increased
+	- [x] Highlighted red with a down arrow if price decreaed
 
 ## Additional Challenges
 
