@@ -9,10 +9,10 @@
 - [ ] Each field should allow only one digit between 0-9
 - [ ] Entering a number in a field should advance cursor to next field
 - [ ] Pressing backspace at beginning should focus the previous field and delete input inside
-- [ ] Styling:
-	- [ ] Inputs should be positioned next to one another
-	- [ ] inputs should be rectangular
-	- [ ] submit button should be below inputs
+- [x] Styling:
+  - [x] Inputs should be positioned next to one another
+  - [x] inputs should be rectangular
+  - [x] submit button should be below inputs
 
 ## Additional Challenges
 
@@ -21,6 +21,7 @@
 - [ ] Make copy/paste work if the first field is highlighted
 
 ## Technologies Used
+
 - Vanilla JS
 - HTML
 - CSS
