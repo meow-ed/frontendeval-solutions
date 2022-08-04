@@ -2,6 +2,10 @@ body {
   font-family: sans-serif;
 }
 
+input {
+  font-family: inherit;
+}
+
 .main {
   margin-block-start: 4rem;
   margin-inline: auto;
@@ -20,7 +24,6 @@ body {
   width: 3rem;
   height: 3rem;
   font-size: 2.5rem;
-  font-family: inherit;
   text-align: center;
 }
 
